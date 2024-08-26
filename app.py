@@ -9,7 +9,7 @@ def create_app():
 
     @app.route('/')
     def home():
-        return 'Hello to Manoj DevOps World'
+        return 'Hello to Manoj DevOps World, welcome to Manipal Institute of Technology'
     
 
     return app 
