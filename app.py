@@ -12,8 +12,6 @@ def create_app():
         return 'Hello to Manoj DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops Student'
     return app 
 
-def a():
-    return a()
 
 if __name__ == '__main__':
     app = create_app()
