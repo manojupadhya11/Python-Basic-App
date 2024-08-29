@@ -81,7 +81,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: manuupadhya11/PythonFlask:latest
+          tags: manuupadhya11/pythonflask:latest
 
 
           
