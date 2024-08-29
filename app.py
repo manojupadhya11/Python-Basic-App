@@ -2,14 +2,13 @@
 
 from flask import Flask
 
-
-
 def create_app():
     app = Flask(__name__)
 
     @app.route('/')
     def home():
         return 'Hello to Manoj DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops Student'
+        
     return app 
 
 
