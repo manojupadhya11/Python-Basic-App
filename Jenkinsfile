@@ -6,7 +6,9 @@ pipeline
   stages {
     stage("Deployment on PROD env"){
       steps {
-        sh "docker run -dit --name webos -p 80:80 manuupadhya11/pythonflask:latest
+        sh "docker run -dit --name webos -p 80:80 manuupadhya11/pythonflask
+
+        
       }
     }  
   }
