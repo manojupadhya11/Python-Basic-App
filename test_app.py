@@ -17,6 +17,7 @@ def test_home(client):
     assert response.status_code == 200
 
     expected_text = 'Hello from Manoj to DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops Student, Exploring the beautiful Cloud-DevOps World.'
+#Comment
 
     print(response.data)
     assert expected_text.encode() == response.data
