@@ -16,7 +16,7 @@ def test_home(client):
     response = client.get('/')
     assert response.status_code == 200
 
-    expected_text = 'Hello from Manoj to DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops Student, Exploring the beautiful Cloud-DevOps World.'
+    expected_text = 'Hello from Manoj to DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops Student, Exploring the beautiful Cloud-DevOps World. Love from Bengaluru'
 #Comment
 
     print(response.data)
