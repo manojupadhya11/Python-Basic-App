@@ -1,0 +1,35 @@
+pipeline {
+    agent {
+        label 'ec2'
+    }
+//Stages pahse for CI and CD
+    stages {
+        stage('Download code from github') {
+            steps {
+                //job1
+                sh 'yum install git -y'
+                git branch: 'main', url: 'https://github.com/manojupadhya11/Python-Basic-App.git'
+                echo "Code downloaded from github"
+            }
+        }
+        stage('Unit testing') {
+            steps {
+                sh "yum install python3-pip -y"
+                sh "pip3 install -r requirements.txt"
+                sh "pytest"
+                echo "Unit test cases are completed"
+            }
+        }
+        stage("Build Docker image"){
+            steps {
+                sh 'docker build -t mywebimg .'
+            }
+        }
+        stage ("Deployment to production"){
+            steps {
+                sh 'docker run -d -p 8081:80 --name webos2 mywebimg'
+            }
+        }
+    }
+
+}
