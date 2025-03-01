@@ -8,7 +8,7 @@ def create_app():
     @app.route('/')
     def home():
 
-        return 'Hello from Manoj to DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops explorer'
+        return '123455r'
 
         
     return app 
