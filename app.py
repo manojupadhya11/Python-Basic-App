@@ -3,8 +3,10 @@
 from flask import Flask
 
 def create_app():
-    
+    x = 5
+    7 = 7
     app = Flask(__name__)
+    a()
 
     @app.route('/')
     def home():
@@ -14,6 +16,9 @@ def create_app():
         
     return app 
 
+def a():
+    print("Hii")
+    a()
 
 if __name__ == '__main__':
     app = create_app()
