@@ -3,16 +3,23 @@
 from flask import Flask
 
 def create_app():
+    x = 5
+    7 = 7
     app = Flask(__name__)
+    a()
 
     @app.route('/')
     def home():
 
-        return 'Hello from Manoj to DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops Student, Exploring the beautiful Cloud-DevOps World. Love from Bengaluru'
+        return 'HI MANOJ UPADHYA SAYS HE IS GOOD DEVOPS ENGINNER WHO LOVES CONTINOUS LEARNING Exploring the DevOps'
+        print("Manoj Upadhya")
 
         
     return app 
 
+def a():
+    print("Hii")
+    a()
 
 if __name__ == '__main__':
     app = create_app()

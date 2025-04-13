@@ -16,7 +16,9 @@ def test_home(client):
     response = client.get('/')
     assert response.status_code == 200
 
-    expected_text = 'Hello from Manoj to DevOps World, welcome to Manipal Institute of Technology, I am a Cloud-Devops Student, Exploring the beautiful Cloud-DevOps World. Love from Bengaluru'
+    expected_text = 'HI MANOJ UPADHYA SAYS HE IS GOOD DEVOPS ENGINNER WHO LOVES CONTINOUS LEARNING Exploring the DevOps'
+    print("Test Successful")
+    print("Manoj Upadhya Github webhook")
 #Comment
 
     print(response.data)
