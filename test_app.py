@@ -17,6 +17,7 @@ def test_home(client):
     assert response.status_code == 200
 
     expected_text = 'HI MANOJ UPADHYA SAYS HE IS GOOD DEVOPS ENGINNER WHO LOVES CONTINOUS LEARNING Exploring the DevOps'
+    print("Test Successful")
 #Comment
 
     print(response.data)
